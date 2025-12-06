@@ -1,0 +1,168 @@
+:root {
+  --ifm-background-color: #0F172A;
+  --ifm-background-surface-color: #1E293B;
+  --ifm-color-primary: #3B82F6;
+  --ifm-color-primary-dark: #2563EB;
+  --ifm-color-primary-light: #60A5FA;
+  --ifm-font-color-base: #F8FAFC;
+  --ifm-heading-color: #F8FAFC;
+  --ifm-code-background: #1E293B;
+
+  /* Additional dark theme colors for accessibility */
+  --ifm-color-secondary: #64748B;
+  --ifm-color-success: #10B981;
+  --ifm-color-info: #0EA5E9;
+  --ifm-color-warning: #F59E0B;
+  --ifm-color-danger: #EF4444;
+  --ifm-breadcrumb-color-active: #F8FAFC;
+  --ifm-code-color: #F8FAFC;
+  --ifm-table-cell-background: #1E293B;
+  --ifm-table-header-background: #0F172A;
+  --ifm-table-border-color: #334155;
+}
+
+/* Responsive design for code blocks */
+.prism-code {
+  overflow-x: auto;
+  max-width: 100%;
+  font-size: 0.9rem;
+}
+
+/* Responsive design for diagrams */
+.md\:overflow-x-auto {
+  overflow-x: auto;
+}
+
+/* Responsive design for images and diagrams */
+article img,
+article svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive tables */
+.table-wrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
+/* Mobile-friendly navigation */
+@media (max-width: 996px) {
+  .navbar-sidebar .navbar-sidebar__item {
+    padding: 0.5rem;
+  }
+
+  .menu__list-item {
+    margin: 0.25rem 0;
+  }
+
+  .prism-code {
+    font-size: 0.8rem;
+  }
+
+  /* Responsive sidebar */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    z-index: 101;
+    padding-top: var(--ifm-navbar-height);
+    transition: var(--ifm-transition-fast) ease;
+    width: var(--doc-sidebar-width);
+  }
+
+  .sidebar.show {
+    left: 0;
+  }
+
+  .sidebar .menu {
+    padding-right: 0;
+  }
+
+  .docSidebarContainer {
+    display: block;
+    width: var(--doc-sidebar-width);
+  }
+
+  .docMainContainer {
+    flex: 1;
+  }
+
+  .docItemWrapper {
+    padding: 0 0.5rem;
+  }
+}
+
+/* Ensure all admonitions (info, tip, caution, danger) follow the dark theme */
+.admonition {
+  border-left: 4px solid;
+  background-color: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+}
+
+.admonition--note {
+  border-left-color: var(--ifm-color-info);
+}
+
+.admonition--tip {
+  border-left-color: var(--ifm-color-success);
+}
+
+.admonition--caution {
+  border-left-color: var(--ifm-color-warning);
+}
+
+.admonition--danger {
+  border-left-color: var(--ifm-color-danger);
+}
+
+/* Table styling for dark theme */
+.table-wrapper table {
+  border: 1px solid var(--ifm-table-border-color);
+}
+
+.table-wrapper table th,
+.table-wrapper table td {
+  border: 1px solid var(--ifm-table-border-color);
+  color: var(--ifm-font-color-base);
+  background-color: var(--ifm-table-cell-background);
+}
+
+.table-wrapper table th {
+  background-color: var(--ifm-table-header-background);
+}
+
+/* Link styling for better contrast */
+a {
+  color: var(--ifm-color-primary-light);
+}
+
+a:hover {
+  color: var(--ifm-color-primary);
+  text-decoration: underline;
+}
+
+/* Breadcrumb styling */
+.breadcrumb__link {
+  color: var(--ifm-font-color-base);
+}
+
+.breadcrumb__link--active {
+  color: var(--ifm-breadcrumb-color-active);
+}
+
+/* For very small screens */
+@media (max-width: 320px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .prism-code {
+    font-size: 0.75rem;
+  }
+
+  .docItemWrapper {
+    padding: 0 0.25rem;
+  }
+}

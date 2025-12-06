@@ -1,55 +1,100 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+Version change: 1.0.0 → 1.1.0
+List of modified principles:
+- User-Centric Design: Changed from 'Professional lighting theme' to 'Professional dark theme'
+- Technical Excellence: Added requirement to follow Docusaurus documentation
+- Added new principle: Design System - Professional Dark Theme
+- Updated Technical Stack: Removed search functionality, added Docusaurus documentation requirement
+- Updated Governance: Added Docusaurus best practices compliance requirement
+Added sections: Design System - Professional Dark Theme (Color Palette and Typography)
+Removed sections: N/A
+Templates requiring updates:
+- .specify/templates/plan-template.md - ✅ verified
+- .specify/templates/spec-template.md - ✅ verified
+- .specify/templates/tasks-template.md - ✅ verified
+- README.md - ✅ verified
+Follow-up TODOs: None
+-->
+# Physical AI & Humanoid Robotics Book Project Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### AI-Driven Development
+Use Spec-Kit Plus workflow with Qwen AI for code generation and content creation. Embrace AI-assisted development throughout. Follow Docusaurus best practices as documented at https://docusaurus.io/
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Excellence in Education
+Clear, progressive, practical content. Working examples. Visual aids. Accessible to all.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Professional Quality
+Industry-standard tools. Production-ready code. Real-world applications. Technical accuracy required. All implementations must follow Docusaurus documentation and best practices (https://docusaurus.io/docs).
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### User-Centric Design
+Clean interface. Intuitive navigation. Fast performance. Mobile responsive. Professional dark theme.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Technical Excellence
+Must follow industry standards, be tested and working with clear comments, and ensure technical accuracy. Reference Docusaurus documentation (https://docusaurus.io/) for all technical decisions.
 
-### [PRINCIPLE_6_NAME]
+### Spec-Kit Plus & Qwen Workflow
+Follow the Spec-Kit Plus methodology for all development tasks with Qwen AI assistance.
 
+### Design System - Professional Dark Theme
 
-[PRINCIPLE__DESCRIPTION]
+#### Color Palette
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+Dark Mode (Default):
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+- Background Primary: #0F172A (dark slate)
+- Background Secondary: #1E293B (elevated dark)
+- Background Elevated: #334155 (cards/modals)
+- Text Primary: #F8FAFC (soft white)
+- Text Secondary: #CBD5E1 (light gray)
+- Text Muted: #94A3B8 (muted gray)
+- Border Color: #334155 (dark borders)
+- Code Background: #1E293B (code blocks)
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+Accent Colors:
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+- Primary: #3B82F6 (bright blue)
+- Secondary: #14B8A6 (teal)
+- Accent: #A78BFA (light purple)
+- Success: #10B981 (green)
+- Warning: #F59E0B (orange)
+- Error: #EF4444 (red)
+
+#### Typography
+
+- Headings/Body: Inter
+- Code: JetBrains Mono
+- Base: 16px
+
+## Technical Stack & Features Required
+
+Core: Docusaurus 3.x (https://docusaurus.io/), React 18+, MDX content, Qwen AI, Git/GitHub, GitHub Actions, Node.js 18+
+
+Features: Responsive (320px+), Dark mode (default), Syntax highlighting, Mermaid diagrams, Navigation (breadcrumbs, TOC, prev/next)
+
+Note: Search functionality is NOT required. Follow Docusaurus documentation for all implementation details.
+
+## Development Workflow
+
+Spec-Kit Plus workflow: /sp.specify - Requirements, /sp.plan - Architecture, /sp.tasks - Task breakdown, /sp.implement - Execute with Qwen AI.
+
+Deployment: GitHub → GitHub Actions → GitHub Pages.
+
+Documentation Reference: Always consult https://docusaurus.io/docs for best practices, configuration options, and implementation patterns.
+
+## Content Structure
+
+Module 1 - ROS 2: 5 chapters
+Module 2 - Digital Twin: 5 chapters
+Module 3 - NVIDIA Isaac: 5 chapters
+Module 4 - Vision-Language-Action: 5 chapters
+
+Each chapter: Introduction, concepts, examples, code, exercises, summary.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+All PRs/reviews must verify compliance with Docusaurus best practices (https://docusaurus.io/); All development follows Spec-Kit Plus + Qwen workflow; Non-negotiables: Technical accuracy, Professional dark theme, Mobile responsive, Accessibility (WCAG 2.1 AA), GitHub Pages deployment, Spec-Kit Plus + Qwen workflow, Git version control, MIT license, Docusaurus documentation compliance.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.1.0 | **Ratified**: 2025-12-06 | **Last Amended**: 2025-12-06
