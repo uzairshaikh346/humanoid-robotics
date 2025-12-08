@@ -1,19 +1,18 @@
 <!--
 Sync Impact Report:
-Version change: 1.0.0 → 1.1.0
+Version change: 1.1.0 → 1.2.0
 List of modified principles:
-- User-Centric Design: Changed from 'Professional lighting theme' to 'Professional dark theme'
-- Technical Excellence: Added requirement to follow Docusaurus documentation
-- Added new principle: Design System - Professional Dark Theme
-- Updated Technical Stack: Removed search functionality, added Docusaurus documentation requirement
-- Updated Governance: Added Docusaurus best practices compliance requirement
-Added sections: Design System - Professional Dark Theme (Color Palette and Typography)
+- Technical Stack: Added react-chatbot-kit requirement
+- Features: Added Chatbot integration requirement
+- Added new principle: Interactive AI Features
+- Updated Governance: Added chatbot compliance requirement
+Added sections: Interactive AI Features (Chatbot integration guidelines)
 Removed sections: N/A
 Templates requiring updates:
-- .specify/templates/plan-template.md - ✅ verified
-- .specify/templates/spec-template.md - ✅ verified
-- .specify/templates/tasks-template.md - ✅ verified
-- README.md - ✅ verified
+- .specify/templates/plan-template.md - ⚠ pending
+- .specify/templates/spec-template.md - ⚠ pending
+- .specify/templates/tasks-template.md - ⚠ pending
+- README.md - ⚠ pending
 Follow-up TODOs: None
 -->
 # Physical AI & Humanoid Robotics Book Project Constitution
@@ -68,11 +67,21 @@ Accent Colors:
 - Code: JetBrains Mono
 - Base: 16px
 
+### Interactive AI Features
+
+Integrate AI-powered chatbot functionality using react-chatbot-kit to enhance user experience and provide interactive Qwen AI capabilities. The chatbot must be:
+- Positioned fixed at bottom right of screen with high z-index (9999)
+- Initially hidden, with toggle button to activate
+- Using CSS modules for styling (no global CSS)
+- Lazy-loaded to avoid affecting page load performance
+- Non-intrusive to existing content and functionality
+- Mobile responsive
+
 ## Technical Stack & Features Required
 
-Core: Docusaurus 3.x (https://docusaurus.io/), React 18+, MDX content, Qwen AI, Git/GitHub, GitHub Actions, Node.js 18+
+Core: Docusaurus 3.x (https://docusaurus.io/), React 18+, MDX content, Qwen AI, Git/GitHub, GitHub Actions, Node.js 18+, react-chatbot-kit
 
-Features: Responsive (320px+), Dark mode (default), Syntax highlighting, Mermaid diagrams, Navigation (breadcrumbs, TOC, prev/next)
+Features: Responsive (320px+), Dark mode (default), Syntax highlighting, Mermaid diagrams, Navigation (breadcrumbs, TOC, prev/next), Chatbot integration
 
 Note: Search functionality is NOT required. Follow Docusaurus documentation for all implementation details.
 
@@ -95,6 +104,6 @@ Each chapter: Introduction, concepts, examples, code, exercises, summary.
 
 ## Governance
 
-All PRs/reviews must verify compliance with Docusaurus best practices (https://docusaurus.io/); All development follows Spec-Kit Plus + Qwen workflow; Non-negotiables: Technical accuracy, Professional dark theme, Mobile responsive, Accessibility (WCAG 2.1 AA), GitHub Pages deployment, Spec-Kit Plus + Qwen workflow, Git version control, MIT license, Docusaurus documentation compliance.
+All PRs/reviews must verify compliance with Docusaurus best practices (https://docusaurus.io/); All development follows Spec-Kit Plus + Qwen workflow; Non-negotiables: Technical accuracy, Professional dark theme, Mobile responsive, Accessibility (WCAG 2.1 AA), GitHub Pages deployment, Spec-Kit Plus + Qwen workflow, Git version control, MIT license, Docusaurus documentation compliance, Chatbot functionality compliant with Interactive AI Features principle.
 
-**Version**: 1.1.0 | **Ratified**: 2025-12-06 | **Last Amended**: 2025-12-06
+**Version**: 1.2.0 | **Ratified**: 2025-12-06 | **Last Amended**: 2025-12-08

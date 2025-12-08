@@ -31,9 +31,9 @@ description: "Task list for Docusaurus Book for Physical AI & Humanoid Robotics"
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Create project structure per implementation plan in physical-ai-book directory
-- [ ] T002 Initialize Docusaurus project with docusaurus.config.js and basic dependencies
-- [ ] T003 [P] Configure prettier and ESLint for consistent code formatting
+- [X] T001 Create project structure per implementation plan in physical-ai-book directory
+- [X] T002 Initialize Docusaurus project with docusaurus.config.js and basic dependencies
+- [X] T003 [P] Configure prettier and ESLint for consistent code formatting
 
 ---
 
@@ -227,7 +227,7 @@ With multiple developers:
 1. Team completes Setup + Foundational together
 2. Once Foundational is done:
    - Developer A: User Story 1 (content creation)
-   - Developer B: User Story 2 (navigation and responsiveness) 
+   - Developer B: User Story 2 (navigation and responsiveness)
    - Developer C: User Story 3 (theme and typography)
 3. Stories complete and integrate independently
 

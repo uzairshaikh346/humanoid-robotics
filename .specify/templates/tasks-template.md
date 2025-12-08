@@ -25,21 +25,21 @@ description: "Task list template for feature implementation"
 - **Mobile**: `api/src/`, `ios/src/` or `android/src/`
 - Paths shown below assume single project - adjust based on plan.md structure
 
-<!-- 
+<!--
   ============================================================================
   IMPORTANT: The tasks below are SAMPLE TASKS for illustration purposes only.
-  
+
   The /sp.tasks command MUST replace these with actual tasks based on:
   - User stories from spec.md (with their priorities P1, P2, P3...)
   - Feature requirements from plan.md
   - Entities from data-model.md
   - Endpoints from contracts/
-  
+
   Tasks MUST be organized by user story so each story can be:
   - Implemented independently
   - Tested independently
   - Delivered as an MVP increment
-  
+
   DO NOT keep these sample tasks in the generated tasks.md file.
   ============================================================================
 -->
@@ -69,7 +69,10 @@ Examples of foundational tasks (adjust based on your project):
 - [ ] T008 Configure error handling and logging infrastructure
 - [ ] T009 Setup environment configuration management
 
-**Checkpoint**: Foundation ready - user story implementation can now begin in parallel
+**Constitution Compliance Check**:
+- [ ] Verify all foundational elements align with constitution principles
+- [ ] Ensure Design System dark theme is implemented in foundational elements
+- [ ] Confirm Technical Excellence and Professional Quality requirements
 
 ---
 
@@ -95,6 +98,13 @@ Examples of foundational tasks (adjust based on your project):
 - [ ] T016 [US1] Add validation and error handling
 - [ ] T017 [US1] Add logging for user story 1 operations
 
+**Constitution Compliance for User Story 1**:
+- [ ] Verify AI-Driven Development principle (Qwen AI usage)
+- [ ] Confirm User-Centric Design (navigation, responsiveness)
+- [ ] Check Technical Excellence (standards, testing, documentation)
+- [ ] Validate Design System (dark theme colors, typography)
+- [ ] If chatbot/AI feature, ensure Interactive AI Features compliance
+
 **Checkpoint**: At this point, User Story 1 should be fully functional and testable independently
 
 ---
@@ -117,6 +127,13 @@ Examples of foundational tasks (adjust based on your project):
 - [ ] T022 [US2] Implement [endpoint/feature] in src/[location]/[file].py
 - [ ] T023 [US2] Integrate with User Story 1 components (if needed)
 
+**Constitution Compliance for User Story 2**:
+- [ ] Verify AI-Driven Development principle (Qwen AI usage)
+- [ ] Confirm User-Centric Design (navigation, responsiveness)
+- [ ] Check Technical Excellence (standards, testing, documentation)
+- [ ] Validate Design System (dark theme colors, typography)
+- [ ] If chatbot/AI feature, ensure Interactive AI Features compliance
+
 **Checkpoint**: At this point, User Stories 1 AND 2 should both work independently
 
 ---
@@ -138,6 +155,13 @@ Examples of foundational tasks (adjust based on your project):
 - [ ] T027 [US3] Implement [Service] in src/services/[service].py
 - [ ] T028 [US3] Implement [endpoint/feature] in src/[location]/[file].py
 
+**Constitution Compliance for User Story 3**:
+- [ ] Verify AI-Driven Development principle (Qwen AI usage)
+- [ ] Confirm User-Centric Design (navigation, responsiveness)
+- [ ] Check Technical Excellence (standards, testing, documentation)
+- [ ] Validate Design System (dark theme colors, typography)
+- [ ] If chatbot/AI feature, ensure Interactive AI Features compliance
+
 **Checkpoint**: All user stories should now be independently functional
 
 ---
@@ -156,6 +180,12 @@ Examples of foundational tasks (adjust based on your project):
 - [ ] TXXX [P] Additional unit tests (if requested) in tests/unit/
 - [ ] TXXX Security hardening
 - [ ] TXXX Run quickstart.md validation
+
+**Final Constitution Compliance Check**:
+- [ ] All principles verified across complete implementation
+- [ ] Interactive AI Features (if applicable) fully compliant
+- [ ] Professional Quality and Technical Excellence confirmed
+- [ ] Design System colors and typography consistent throughout
 
 ---
 

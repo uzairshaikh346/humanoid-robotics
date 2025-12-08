@@ -8,6 +8,7 @@ This educational resource was developed using:
 - **Spec-Kit Plus methodology** for structured development
 - **Qwen AI** for content generation and enhancement
 - **Docusaurus 3.x** for modern documentation experience
+- **Interactive AI Features** using react-chatbot-kit for enhanced user experience
 - **GitHub Actions** for automated deployment
 
 The book is organized into progressive modules that build your understanding from fundamentals to advanced applications:
@@ -67,6 +68,14 @@ yarn run build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Interactive Chatbot
+
+This book features an AI-powered chatbot integrated using react-chatbot-kit to enhance your learning experience. The chatbot:
+- Provides instant answers to questions about the content
+- Offers helpful explanations and examples
+- Is positioned at the bottom right of the screen
+- Is designed to be non-intrusive to your reading experience
 
 ## Target Audience
 
