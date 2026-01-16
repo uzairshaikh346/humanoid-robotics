@@ -12,7 +12,7 @@ function About() {
             <p>
               This educational resource, "Physical AI & Humanoid Robotics," is designed to provide 
               comprehensive coverage of Physical AI concepts, from foundational ROS 2 principles to 
-              advanced topics like vision-language-action models and cognitive planning.
+              advanced topics like vision-language action models and cognitive planning.
             </p>
             
             <h2>Our Mission</h2>
