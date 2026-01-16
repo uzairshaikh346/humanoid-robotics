@@ -1,8 +1,11 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import clsx from 'clsx';
+import { useHomePageUrl } from '../utils/routing';
 
 function NotFound() {
+  const homePageUrl = useHomePageUrl();
+  
   return (
     <Layout title="Page Not Found" description="The requested page does not exist">
       <div className={clsx('container margin-vert--lg padding--md')}>
@@ -20,7 +23,7 @@ function NotFound() {
               </a>
             </div>
             <div className="text--center margin-vert--lg">
-              <a href="/">Return to Home</a>
+              <a href={homePageUrl}>Return to Home</a>
             </div>
           </div>
         </div>

@@ -82,6 +82,7 @@ const config: Config = {
   ],
   plugins: [
     // Additional performance optimizations
+    './src/plugins/docusaurus-plugin-env', // Add environment plugin for Supabase
   ],
 
   themeConfig: {

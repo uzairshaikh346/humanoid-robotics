@@ -6,6 +6,7 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
+import ChatbotUI from '../components/ChatbotUI';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -30,6 +31,7 @@ export default function Home(): React.ReactElement {
       <HomepageHeader />
       <main>
         <section className={styles.features}>
+          <ChatbotUI/>
           <div className="container">
             <div className="row">
               <div className="col col--4">

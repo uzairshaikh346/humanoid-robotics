@@ -166,3 +166,97 @@ a:hover {
     padding: 0 0.25rem;
   }
 }
+
+/* Navbar auth button styling */
+.navbar__auth-button {
+  color: var(--ifm-navbar-link-color) !important;
+  text-decoration: none !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 6px !important;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  transition: all 0.2s !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  border: 1px solid transparent !important;
+  background: transparent !important;
+  cursor: pointer !important;
+  margin-left: 0.5rem !important;
+}
+
+.navbar__item--right .navbar__auth-button {
+  margin-left: 0.75rem !important;
+}
+
+/* Login button styling */
+.navbar__item--right a.navbar__auth-button {
+  background: rgba(59, 130, 246, 0.1) !important;
+  border-color: rgba(59, 130, 246, 0.3) !important;
+}
+
+.navbar__item--right a.navbar__auth-button:hover {
+  background: rgba(59, 130, 246, 0.2) !important;
+  border-color: rgba(59, 130, 246, 0.5) !important;
+  color: var(--ifm-navbar-link-hover-color) !important;
+}
+
+/* Logout button styling */
+.navbar__item--right button.navbar__auth-button {
+  background: rgba(239, 68, 68, 0.1) !important;
+  border-color: rgba(239, 68, 68, 0.3) !important;
+}
+
+.navbar__item--right button.navbar__auth-button:hover {
+  background: rgba(239, 68, 68, 0.2) !important;
+  border-color: rgba(239, 68, 68, 0.5) !important;
+  color: var(--ifm-navbar-link-hover-color) !important;
+}
+
+@media (max-width: 996px) {
+  .navbar__auth-button {
+    margin-left: 0 !important;
+    margin-top: 0.5rem !important;
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+  
+  .navbar__item--right .navbar__auth-button {
+    margin-left: 0 !important;
+  }
+}
+
+/* Auth button alignment */
+.navbar__auth-container {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.navbar__auth-button {
+  background: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navbar__auth-button:hover {
+  background: var(--ifm-color-primary-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar__auth-button--logout {
+  background: var(--ifm-color-danger);
+}
+
+.navbar__auth-button--logout:hover {
+  background: var(--ifm-color-danger-dark);
+}
