@@ -14,6 +14,7 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: false
+
 jobs:
   deploy:
     environment:
@@ -23,24 +24,36 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      # 👇 Build steps
+
+      # 🟦 Setup Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 20.x
-          cache: 'npm'
+          cache: "npm"
+
+      # 🟩 Install dependencies
       - name: Install dependencies
         run: npm ci
+
+      # 🔐 Build with Supabase env variables
       - name: Build
         run: npm run build
-      # 👆 Build steps
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+
+      # 📦 Setup Pages
       - name: Setup Pages
         uses: actions/configure-pages@v4
+
+      # 📤 Upload build artifact (static site)
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # 👇 Specify build output path
-          path: build
+          path: build # ya tumhara build output folder
+
+      # 🚀 Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
